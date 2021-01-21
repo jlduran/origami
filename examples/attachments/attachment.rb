@@ -25,9 +25,9 @@ contents.write "File attachment sample",
 
 pdf.append_page Page.new.setContents(contents)
 
-pdf.onDocumentOpen Action::JavaScript <<JS
-    this.exportDataObject({cName:"README.txt", nLaunch:2});
-JS
+# pdf.onDocumentOpen Action::JavaScript <<JS
+#     this.exportDataObject({cName:"README.txt", nLaunch:2});
+# JS
 
 
 pdf.save(OUTPUT_FILE)
