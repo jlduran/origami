@@ -23,11 +23,12 @@ Gem::Specification.new do |s|
     s.test_file     = "test/test_pdf.rb"
     s.license       = "LGPL-3.0+"
 
-    s.required_ruby_version = '>= 2.1'
-    s.add_runtime_dependency "colorize", "~> 0.8"
-    s.add_development_dependency "minitest", "~> 5.0"
-    s.add_development_dependency 'rake',     '~> 10.0'
-    s.add_development_dependency 'rdoc',     '~> 5.0'
+    s.required_ruby_version = '>= 2.4'
+    s.add_runtime_dependency "colorize", ">= 0.8"
+    s.add_development_dependency "minitest", ">= 5.0"
+    s.add_development_dependency 'rake',     '>= 10.0'
+    s.add_development_dependency 'rdoc',     '>= 5.0'
+    s.add_development_dependency 'rexml',    '>= 3.0'
 
     s.bindir        = "bin"
     s.executables   = %w(pdfsh
